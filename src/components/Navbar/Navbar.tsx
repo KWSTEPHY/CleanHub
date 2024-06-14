@@ -1,6 +1,8 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
+// import HomeSubmenu from "./SubMenu/HomeSubmenu1";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-500 text-white">
+    <nav className="bg-blue-500 text-white fixed w-full top-0 z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <div className="text-2xl font-bold">Logo</div>
         <div className="hidden md:flex space-x-8">
@@ -24,11 +26,11 @@ const Navbar: React.FC = () => {
             </button>
             {dropdownOpen === "home" && (
               <div className="absolute bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
-                  Submenu 1
+                <Link to="/home/submenu1" className="block px-4 py-2 hover:bg-blue-100">
+                  HomeSubmenu1 
                 </Link>
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
-                  Submenu 2
+                <Link to="/home/submenu2" className="block px-4 py-2 hover:bg-blue-100">
+                  HomeSubmenu2 
                 </Link>
               </div>
             )}
@@ -42,10 +44,10 @@ const Navbar: React.FC = () => {
             </button>
             {dropdownOpen === "about" && (
               <div className="absolute bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/about/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 1
                 </Link>
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/about/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 2
                 </Link>
               </div>
@@ -60,10 +62,10 @@ const Navbar: React.FC = () => {
             </button>
             {dropdownOpen === "services" && (
               <div className="absolute bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/services/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 1
                 </Link>
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/services/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 2
                 </Link>
               </div>
@@ -78,10 +80,10 @@ const Navbar: React.FC = () => {
             </button>
             {dropdownOpen === "contacts" && (
               <div className="absolute bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/contacts/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 1
                 </Link>
-                <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                <Link to="/contacts/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                   Submenu 2
                 </Link>
               </div>
@@ -109,10 +111,10 @@ const Navbar: React.FC = () => {
               </button>
               {dropdownOpen === "home" && (
                 <div className="bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/home/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 1
                   </Link>
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/home/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 2
                   </Link>
                 </div>
@@ -127,10 +129,10 @@ const Navbar: React.FC = () => {
               </button>
               {dropdownOpen === "about" && (
                 <div className="bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/about/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 1
                   </Link>
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/about/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 2
                   </Link>
                 </div>
@@ -145,10 +147,10 @@ const Navbar: React.FC = () => {
               </button>
               {dropdownOpen === "services" && (
                 <div className="bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/services/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 1
                   </Link>
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/services/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 2
                   </Link>
                 </div>
@@ -163,10 +165,10 @@ const Navbar: React.FC = () => {
               </button>
               {dropdownOpen === "contacts" && (
                 <div className="bg-white text-blue-500 mt-2 rounded-md shadow-lg">
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/contacts/submenu1" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 1
                   </Link>
-                  <Link to="/" className="block px-4 py-2 hover:bg-blue-100">
+                  <Link to="/contacts/submenu2" className="block px-4 py-2 hover:bg-blue-100">
                     Submenu 2
                   </Link>
                 </div>
@@ -180,3 +182,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
