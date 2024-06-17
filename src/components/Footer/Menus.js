@@ -1,33 +1,30 @@
-export const PRODUCTS = [
-  { name: "Drag And Drop", link: "#" },
-  { name: "Visual Studio X", link: "#" },
-  { name: "Easy Content", link: "#" },
+export const SERVICES = [
+  { name: "Residential Cleaning", link: "#" },
+  { name: "Commercial Cleaning", link: "#" },
+  { name: "Deep Cleaning", link: "#" },
+  { name: "Carpet Cleaning", link: "#" },
+  { name: "Window Cleaning", link: "#" },
 ];
 export const RESOURCES = [
-  { name: "Industries and tools", link: "#" },
-  { name: "Use cases", link: "#" },
+  { name: "Cleaning Tips", link: "#" },
   { name: "Blog", link: "#" },
-  { name: "Online evenet", link: "#" },
-  { name: "Nostrud exercitation", link: "#" },
+  { name: "FAQs", link: "#" },
+  { name: "Customer Testimonials", link: "#" },
+  { name: "Green Cleaning", link: "#" },
 ];
 export const COMPANY = [
-  { name: "Diversity & inclusion", link: "#" },
-  { name: "About us", link: "#" },
+  { name: "About Us", link: "#" },
+  { name: "Our Team", link: "#" },
+  { name: "Careers", link: "#" },
   { name: "Press", link: "#" },
-  { name: "Customer Stories", link: "#" },
-  { name: "Online communities", link: "#" },
-];
-export const SUPPORT = [
-  { name: "Documentation", link: "#" },
-  { name: "Tutorials & guides", link: "#" },
-  { name: "Webinars", link: "#" },
-  { name: "Open-source", link: "#" },
+  { name: "Contact Us", link: "#" },
 ];
 
-export const Icons = [
-  { name: "logo-facebook", link: "#" },
-  { name: "logo-twitter", link: "#" },
-  { name: "logo-github", link: "#" },
-  { name: "logo-linkedin", link: "#" },
-  { name: "logo-instagram", link: "#" },
+export const SUPPORT = [
+  { name: "Help Center", link: "#" },
+  { name: "Service Guides", link: "#" },
+  { name: "Terms of Service", link: "#" },
+  { name: "Privacy Policy", link: "#" },
+  { name: "Refund Policy", link: "#" },
 ];
+
