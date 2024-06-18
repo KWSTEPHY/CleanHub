@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-white text-[#002147] font-bold fixed w-full top-0 z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <div className="text-2xl font-bold">Logo</div>
+        <div className="text-2xl font-bold">Koda Lavare</div>
         <div className="hidden md:flex space-x-8">
           <div className="relative">
             <Link
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <Link
               onClick={() => toggleDropdown("about")}
               className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
-              to=""
+              to="/about-us"
             >
               About Us
             </Link>
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
             <Link
               onClick={() => toggleDropdown("contacts")}
               className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
-              to=""
+              to="/contacts"
             >
               Contacts +
             </Link>
