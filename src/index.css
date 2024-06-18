@@ -30,6 +30,7 @@ a:hover {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   display: flex;
   place-items: center;

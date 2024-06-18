@@ -15,9 +15,9 @@ import Footer from "./components/Footer/Footer"
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      {/* <div className="flex flex-col min-h-screen"> */}
       <Navbar />
-      <main className="flex-grow container mx-auto p-4">
+      {/* <main className="flex-grow container mx-auto p-4"> */}
         <Routes>
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contacts" element={<Contacts />} />
@@ -28,10 +28,10 @@ const App: React.FC = () => {
           <Route path="/contacts/submenu1" element={<ContactsSubmenu1 />} />
           <Route path="/contacts/submenu2" element={<ContactsSubmenu2 />} /> */} 
         </Routes>
-        </main>
+        {/* </main> */}
         <Footer/>
       
-      </div>
+      {/* </div> */}
     </Router>
    
   );
