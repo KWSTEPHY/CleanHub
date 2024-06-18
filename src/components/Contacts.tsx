@@ -4,43 +4,37 @@ const Contacts: React.FC = () => {
   return (
     <div className="w-screen">
       <section
-        className="bg-cover bg-center relative w-screen mx-auto pt-24"
+        className="bg-cover bg-center relative w-screen mx-auto pt-15"
         style={{
-          backgroundImage: `url('src/assets/Cómo quitar sarro y manchas de los vidrios con 6 remedios caseros.jpeg')`,
+          backgroundImage: `url('src/assets/pic 3.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
-          minHeight: "500px",
-          width:"100%"
+          minHeight: "400px",
+          width: "100%",
         }}
       >
         <div
-          className="container flex bg-black bg-opacity-50 text-white rounded-lg backdrop-filter backdrop-blur-sm mx-auto"
+          className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
           style={{
             backdropFilter: "blur(10px)",
-            minHeight: "500px",
-            width: "100%", 
-            font: "bold",// Adjust the blur amount as desired
+            height: "400px",
+            width: "100%",
+            fontWeight: "bold", // Adjust the blur amount as desired
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          <h2 className="text-4xl font-bold text-left px-6 py-8">
-            {/* The company was formed solely to provide proper cleaning services
-            that are thorough and convenient at the comfort of your home,
-            office, or wherever you are, whenever you need them. Cleanliness
-            improves the quality of life in general, from health to proper air
-            quality and maintaining surfaces and materials. Here at Koda Lavare,
-            we make it a point to improve your quality of life with our premium
-            cleaning services. */}
-          Koda Lavare
+          <h2 className="text-6xl font-bold  px-6 py-8">
+            Contact Us
           </h2>
-          
         </div>
       </section>
 
       <section className="bg-white w-screen text-black py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
+        <div className="container mx-auto">
+          <h2 className="text-6xl font-bold mx-auto px-0 text-[#002147]">Our Mission</h2>
           <p className="text-lg">
             Our mission is to provide the highest quality cleaning services to
             ensure a clean, safe, and healthy environment for our clients. We
