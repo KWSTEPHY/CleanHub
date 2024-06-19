@@ -35,11 +35,12 @@ const Contacts: React.FC = () => {
             justifyContent: "center",
           }}
         >
-           <h2
+          <h2
             className="text-8xl font-bold mx-auto px-6 py-8"
             style={{
               fontStyle: "italic",
-            }}>
+            }}
+          >
             Contact Us
           </h2>
         </div>
@@ -97,87 +98,6 @@ const Contacts: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="bg-gray-500 text-white py-20">
-        <div className="ml-64 w-full px-6">
-          <div className={cardStyleTwo}>
-            <h2 className="text-4xl font-bold text-[#002147] mb-4 mt-10">
-              Get an emergency call or appointment
-            </h2>
-            <form className="w-full max-w-md">
-              <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div className="flex space-x-4">
-                <div className="mb-4 w-1/2">
-                  <label
-                    htmlFor="date"
-                    className="block text-gray-700 font-bold mb-2"
-                  >
-                    Date
-                  </label>
-                  <input
-                    type="date"
-                    id="date"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  />
-                </div>
-                <div className="mb-4 w-1/2">
-                  <label
-                    htmlFor="message"
-                    className="block text-gray-700 font-bold mb-2"
-                  >
-                    Message
-                  </label>
-                  <input
-                    type="message"
-                    id="message"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Enter your message"
-                  ></input>
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between">
-                <button
-                  className="bg-[#002147] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-            <p className="text-lg mt-4 text-center whitespace-pre-wrap">
-              info@webmail.com support@webmail.com jobs.@webmail.com
-            </p>
-          </div>
-        </div>
-      </section> */}
       <section
         className="bg-cover bg-center relative w-screen mx-auto pt-15 "
         style={{
@@ -202,87 +122,86 @@ const Contacts: React.FC = () => {
             justifyContent: "center",
           }}
         >
-         <div className="ml-80 w-full px-6">
-          <div className={cardStyleTwo}>
-            <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
-              Get an emergency call or appointment
-            </h2>
-            <form className="w-full max-w-md">
-              <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-gray-700 font-bold mb-2"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  placeholder="Enter your email"
-                />
-              </div>
-              <div className="flex space-x-4">
-                <div className="mb-4 w-1/2">
+          <div className="ml-80 w-full px-6">
+            <div className={cardStyleTwo}>
+              <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
+                Get an emergency call or appointment
+              </h2>
+              <form className="w-full max-w-md">
+                <div className="mb-4">
                   <label
-                    htmlFor="date"
+                    htmlFor="name"
                     className="block text-gray-700 font-bold mb-2"
                   >
-                    Date
+                    Name
                   </label>
                   <input
-                    type="date"
-                    id="date"
+                    type="text"
+                    id="name"
                     className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your name"
                   />
                 </div>
-                <div className="mb-4 w-1/2">
+                <div className="mb-4">
                   <label
-                    htmlFor="message"
+                    htmlFor="email"
                     className="block text-gray-700 font-bold mb-2"
                   >
-                    Message
+                    Email
                   </label>
                   <input
-                    type="message"
-                    id="message"
+                    type="email"
+                    id="email"
                     className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Enter your message"
-                  ></input>
+                    placeholder="Enter your email"
+                  />
                 </div>
-              </div>
+                <div className="flex space-x-4">
+                  <div className="mb-4 w-1/2">
+                    <label
+                      htmlFor="date"
+                      className="block text-gray-700 font-bold mb-2"
+                    >
+                      Date
+                    </label>
+                    <input
+                      type="date"
+                      id="date"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    />
+                  </div>
+                  <div className="mb-4 w-1/2">
+                    <label
+                      htmlFor="message"
+                      className="block text-gray-700 font-bold mb-2"
+                    >
+                      Message
+                    </label>
+                    <input
+                      type="message"
+                      id="message"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      placeholder="Enter your message"
+                    ></input>
+                  </div>
+                </div>
 
-              <div className="flex items-center justify-between">
-                <button
-                  className="bg-[#002147] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="button"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
-            <p className="text-lg mt-4 text-center whitespace-pre-wrap">
-              info@webmail.com support@webmail.com jobs.@webmail.com
-            </p>
+                <div className="flex items-center justify-between">
+                  <button
+                    className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+              <p className="text-lg mt-4 text-center whitespace-pre-wrap">
+                info@webmail.com support@webmail.com jobs.@webmail.com
+              </p>
+            </div>
           </div>
         </div>
-        </div>
       </section>
-
     </div>
   );
 };

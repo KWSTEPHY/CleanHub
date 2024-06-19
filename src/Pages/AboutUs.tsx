@@ -38,7 +38,7 @@ const AboutUs = () => {
       <section className="bg-gray-200 w-screen text-black py-20 text-center justify-center">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className={`${cardStyle} bg-yellow-400`}>
+            <div className={`${cardStyle} bg-blue-500 hover:bg-yellow-400 transition-colors duration-300 transform hover:scale-110 hover:shadow-lg`}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Mission
               </h2>
@@ -49,7 +49,8 @@ const AboutUs = () => {
                 dedication to excellence and commitment to sustainability.
               </p>
             </div>
-            <div className={cardStyle}>
+            <div className={`${cardStyle} bg-blue-500 hover:bg-yellow-400 transition-colors duration-300 transform hover:scale-110 hover:shadow-lg`}
+      >
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Vision
               </h2>
@@ -60,7 +61,7 @@ const AboutUs = () => {
                 industry.
               </p>
             </div>
-            <div className={`${cardStyle} bg-blue-500`}>
+            <div className={`${cardStyle} bg-blue-500 hover:bg-yellow-400 transition-colors duration-300 transform hover:scale-110 hover:shadow-lg`}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Values
               </h2>
