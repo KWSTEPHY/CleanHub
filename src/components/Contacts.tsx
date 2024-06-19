@@ -21,21 +21,22 @@ const Contacts: React.FC = () => {
             backdropFilter: "blur(10px)",
             height: "400px",
             width: "100%",
-            fontWeight: "bold", // Adjust the blur amount as desired
+            fontWeight: "bold",
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          <h2 className="text-6xl font-bold  px-6 py-8">
+          <h2 className="text-6xl font-bold px-6 py-8">
             Contact Us
           </h2>
         </div>
       </section>
 
       <section className="bg-white w-screen text-black py-20">
-        <div className="container mx-auto">
-          <h2 className="text-6xl font-bold mx-auto px-0 text-[#002147]">Our Mission</h2>
-          <p className="text-lg">
+        <div className="w-full px-6">
+          <h2 className="text-6xl font-bold mx-auto text-[#002147]">Our Mission</h2>
+          <p className="text-lg mt-4">
             Our mission is to provide the highest quality cleaning services to
             ensure a clean, safe, and healthy environment for our clients. We
             strive to exceed customer expectations through our dedication to
@@ -45,7 +46,7 @@ const Contacts: React.FC = () => {
       </section>
 
       <section className="bg-blue-500 text-white py-20">
-        <div className="container mx-auto px-6">
+        <div className="w-full px-6">
           <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
           <p className="text-lg">
             Our vision is to be the leading cleaning service provider known for
@@ -77,3 +78,4 @@ const Contacts: React.FC = () => {
 };
 
 export default Contacts;
+
