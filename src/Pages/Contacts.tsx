@@ -35,7 +35,13 @@ const Contacts: React.FC = () => {
             justifyContent: "center",
           }}
         >
-          <h2 className="text-6xl font-bold px-6 py-8">Contact Us</h2>
+           <h2
+            className="text-8xl font-bold mx-auto px-6 py-8"
+            style={{
+              fontStyle: "italic",
+            }}>
+            Contact Us
+          </h2>
         </div>
       </section>
 
