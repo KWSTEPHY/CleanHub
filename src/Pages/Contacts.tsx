@@ -1,6 +1,14 @@
 import React from "react";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { LuPhoneCall } from "react-icons/lu";
+import { RiHomeOfficeFill } from "react-icons/ri";
+import { IoMdMegaphone } from "react-icons/io";
 
 const Contacts: React.FC = () => {
+  const cardStyle =
+    "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
+  const cardStyleTwo =
+    "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
   return (
     <div className="w-screen">
       <section
@@ -27,55 +35,250 @@ const Contacts: React.FC = () => {
             justifyContent: "center",
           }}
         >
-          <h2 className="text-6xl font-bold px-6 py-8">
-            Contact Us
-          </h2>
+          <h2 className="text-6xl font-bold px-6 py-8">Contact Us</h2>
         </div>
       </section>
 
       <section className="bg-white w-screen text-black py-20">
         <div className="w-full px-6">
-          <h2 className="text-6xl font-bold mx-auto text-[#002147]">Our Mission</h2>
-          <p className="text-lg mt-4">
-            Our mission is to provide the highest quality cleaning services to
-            ensure a clean, safe, and healthy environment for our clients. We
-            strive to exceed customer expectations through our dedication to
-            excellence and commitment to sustainability.
-          </p>
+          <div className="flex justify-center">
+            <div className="flex items-center space-x-40">
+              <div className={cardStyle}>
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <MdOutlineAlternateEmail className="h-20 w-20 text-[#002147]" />
+                </div>
+                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+                  Email Address
+                </h2>
+                <p className="text-lg mt-4 text-center">
+                  info@webmail.com support@webmail.com jobs.@webmail.com
+                </p>
+              </div>
+              <div className={cardStyle}>
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <LuPhoneCall className="h-20 w-20 text-[#002147]" />
+                </div>
+                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
+                  Phone Number
+                </h2>
+                <p className="text-lg mt-4 text-center ">
+                  (+254)803456675 (+254)712345874 (+254)123456992
+                </p>
+              </div>
+              <div className={cardStyle}>
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <RiHomeOfficeFill className="h-20 w-20 text-[#002147]" />
+                </div>
+                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+                  Office Address
+                </h2>
+                <p className="text-lg mt-4 text-center">
+                  info@webmail.com support@webmail.com jobs.@webmail.com
+                </p>
+              </div>
+              <div className={cardStyle}>
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <IoMdMegaphone className="h-20 w-20 text-[#002147]" />
+                </div>
+                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
+                  Social Connect
+                </h2>
+                <p className="text-lg mt-4 text-center">
+                  www.facebook.com www.twitter.com www.instagram.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="bg-blue-500 text-white py-20">
-        <div className="w-full px-6">
-          <h2 className="text-4xl font-bold mb-4">Our Vision</h2>
-          <p className="text-lg">
-            Our vision is to be the leading cleaning service provider known for
-            our innovative solutions and customer-centric approach. We aim to
-            set the standard for cleanliness and hygiene in the industry.
-          </p>
-          <h2 className="text-4xl font-bold mb-4 mt-8">Our Values</h2>
-          <ul className="text-lg list-disc pl-5">
-            <li className="mb-2">
-              Integrity: We operate with honesty and integrity in all that we
-              do.
-            </li>
-            <li className="mb-2">
-              Excellence: We are committed to delivering top-quality services.
-            </li>
-            <li className="mb-2">
-              Sustainability: We prioritize eco-friendly practices in our
-              operations.
-            </li>
-            <li className="mb-2">
-              Customer Satisfaction: We aim to exceed our customers'
-              expectations.
-            </li>
-          </ul>
+      {/* <section className="bg-gray-500 text-white py-20">
+        <div className="ml-64 w-full px-6">
+          <div className={cardStyleTwo}>
+            <h2 className="text-4xl font-bold text-[#002147] mb-4 mt-10">
+              Get an emergency call or appointment
+            </h2>
+            <form className="w-full max-w-md">
+              <div className="mb-4">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="flex space-x-4">
+                <div className="mb-4 w-1/2">
+                  <label
+                    htmlFor="date"
+                    className="block text-gray-700 font-bold mb-2"
+                  >
+                    Date
+                  </label>
+                  <input
+                    type="date"
+                    id="date"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  />
+                </div>
+                <div className="mb-4 w-1/2">
+                  <label
+                    htmlFor="message"
+                    className="block text-gray-700 font-bold mb-2"
+                  >
+                    Message
+                  </label>
+                  <input
+                    type="message"
+                    id="message"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your message"
+                  ></input>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <button
+                  className="bg-[#002147] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <p className="text-lg mt-4 text-center whitespace-pre-wrap">
+              info@webmail.com support@webmail.com jobs.@webmail.com
+            </p>
+          </div>
+        </div>
+      </section> */}
+      <section
+        className="bg-cover bg-center relative w-screen mx-auto pt-15 "
+        style={{
+          backgroundImage: `url('src/assets/pic 3.jpeg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          minHeight: "700px",
+          width: "100%",
+        }}
+      >
+        <div
+          className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
+          style={{
+            backdropFilter: "blur(10px)",
+            height: "700px",
+            width: "100%",
+            fontWeight: "bold",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+         <div className="ml-80 w-full px-6">
+          <div className={cardStyleTwo}>
+            <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
+              Get an emergency call or appointment
+            </h2>
+            <form className="w-full max-w-md">
+              <div className="mb-4">
+                <label
+                  htmlFor="name"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  htmlFor="email"
+                  className="block text-gray-700 font-bold mb-2"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="flex space-x-4">
+                <div className="mb-4 w-1/2">
+                  <label
+                    htmlFor="date"
+                    className="block text-gray-700 font-bold mb-2"
+                  >
+                    Date
+                  </label>
+                  <input
+                    type="date"
+                    id="date"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  />
+                </div>
+                <div className="mb-4 w-1/2">
+                  <label
+                    htmlFor="message"
+                    className="block text-gray-700 font-bold mb-2"
+                  >
+                    Message
+                  </label>
+                  <input
+                    type="message"
+                    id="message"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter your message"
+                  ></input>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <button
+                  className="bg-[#002147] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+            <p className="text-lg mt-4 text-center whitespace-pre-wrap">
+              info@webmail.com support@webmail.com jobs.@webmail.com
+            </p>
+          </div>
+        </div>
         </div>
       </section>
+
     </div>
   );
 };
 
 export default Contacts;
-
