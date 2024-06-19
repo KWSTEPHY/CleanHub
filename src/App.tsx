@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import AboutUs from "./components/AboutUs";
-import Contacts from "./components/Contacts";
+import AboutUs from "./Pages/AboutUs";
+import Contacts from "./Pages/Contacts";
 // import HomeSubmenu2 from "./components/Navbar/SubMenu/HomeSubmenu2";
 // import AboutSubmenu1 from "./AboutSubmenu1";
 // import AboutSubmenu2 from "./AboutSubmenu2";
