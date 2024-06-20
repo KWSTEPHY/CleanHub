@@ -4,7 +4,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { RiHomeOfficeFill } from "react-icons/ri";
 import { IoMdMegaphone } from "react-icons/io";
 
-const Contacts: React.FC = () => {
+const Home: React.FC = () => {
   const cardStyle =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
   const cardStyleTwo =
@@ -41,7 +41,7 @@ const Contacts: React.FC = () => {
               fontStyle: "italic",
             }}
           >
-            Contact Us
+            Nyumbani
           </h2>
         </div>
       </section>
@@ -51,9 +51,15 @@ const Contacts: React.FC = () => {
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
               <div className={cardStyle}>
+
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <h1>01</h1>
+                </div>
+
                 <div className="p-6 bg-white rounded-full shadow-md">
                   <MdOutlineAlternateEmail className="h-20 w-20 text-[#002147]" />
                 </div>
+
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
                   Email Address
                 </h2>
@@ -62,9 +68,15 @@ const Contacts: React.FC = () => {
                 </p>
               </div>
               <div className={cardStyle}>
+
+                <div className="p-6 bg-white rounded-full shadow-md">
+                 <h1>02</h1>
+                </div>
+
                 <div className="p-6 bg-white rounded-full shadow-md">
                   <LuPhoneCall className="h-20 w-20 text-[#002147]" />
                 </div>
+
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
                   Phone Number
                 </h2>
@@ -73,9 +85,16 @@ const Contacts: React.FC = () => {
                 </p>
               </div>
               <div className={cardStyle}>
+
                 <div className="p-6 bg-white rounded-full shadow-md">
+                  <h1>03</h1>
+                </div>
+
+                <div className="p-6 bg-white rounded-full shadow-md">
+                    <p>replace</p>
                   <RiHomeOfficeFill className="h-20 w-20 text-[#002147]" />
                 </div>
+
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
                   Office Address
                 </h2>
@@ -84,9 +103,15 @@ const Contacts: React.FC = () => {
                 </p>
               </div>
               <div className={cardStyle}>
+
+                <div className="p-6 bg-white rounded-full shadow-md">
+                  <h1>04</h1>
+                </div>
+
                 <div className="p-6 bg-white rounded-full shadow-md">
                   <IoMdMegaphone className="h-20 w-20 text-[#002147]" />
                 </div>
+
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
                   Social Connect
                 </h2>
@@ -205,4 +230,4 @@ const Contacts: React.FC = () => {
   );
 };
 
-export default Contacts;
+export default Home;

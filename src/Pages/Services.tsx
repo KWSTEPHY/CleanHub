@@ -41,7 +41,7 @@ const Services: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-gray-200 w-screen text-black py-20">
+      <section className="bg-blue-100 w-screen text-black py-20">
         <div className="w-full px-6">
           <div className="flex justify-center">
             <div className="grid grid-cols-3 gap-6">

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./Pages/Home"
 import AboutUs from "./Pages/AboutUs";
 import Contacts from "./Pages/Contacts";
 import Services from "./Pages/Services";
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Navbar />
 
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/services" element={<Services />} />

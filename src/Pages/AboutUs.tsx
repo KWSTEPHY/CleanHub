@@ -35,12 +35,11 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="bg-gray-200 w-screen text-black py-20 text-center justify-center">
+      <section className="bg-blue-100 w-screen text-black py-20 text-center justify-center">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
-              style={{ position: "relative" }}>
+      
+        <div className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`} style={{ position: "relative" }}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Mission
               </h2>
@@ -51,9 +50,8 @@ const AboutUs = () => {
                 dedication to excellence and commitment to sustainability.
               </p>
             </div>
-            <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
-              style={{ position: "relative" }}>
+            <div className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`} style={{ position: "relative" }}>
+
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Vision
               </h2>
@@ -64,9 +62,7 @@ const AboutUs = () => {
                 industry.
               </p>
             </div>
-            <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
-              style={{ position: "relative" }}>
+        <div className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`} style={{ position: "relative" }}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Values
               </h2>
