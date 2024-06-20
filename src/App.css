@@ -53,3 +53,11 @@
 .rotate-in {
   animation: rotate 1s ease-in-out forwards;
 }
+
+.service-image {
+  transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.1);
+}

@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           <div className="relative">
             <Link
               className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
-              to=""
+              to="/services"
             >
               Services
             </Link>

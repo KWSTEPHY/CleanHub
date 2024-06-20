@@ -46,10 +46,10 @@ const Contacts: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-white w-screen text-black py-20">
+      <section className="bg-gray-200 w-screen text-black py-20">
         <div className="w-full px-6">
-          <div className="flex justify-center">
-            <div className="flex items-center space-x-40">
+          <div className="flex justify-center m-4">
+            <div className="grid grid-cols-4 gap-6">
               <div className={cardStyle}>
                 <div className="p-6 bg-white rounded-full shadow-md">
                   <MdOutlineAlternateEmail className="h-20 w-20 text-[#002147]" />
@@ -138,7 +138,7 @@ const Contacts: React.FC = () => {
                   <input
                     type="text"
                     id="name"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Contacts: React.FC = () => {
                   <input
                     type="email"
                     id="email"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -167,7 +167,7 @@ const Contacts: React.FC = () => {
                     <input
                       type="date"
                       id="date"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
                   <div className="mb-4 w-1/2">
@@ -180,17 +180,16 @@ const Contacts: React.FC = () => {
                     <input
                       type="message"
                       id="message"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter your message"
                     ></input>
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                   <button
-                    className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="button"
-                  >
+                    className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
+                    type="button">
                     Submit
                   </button>
                 </div>
