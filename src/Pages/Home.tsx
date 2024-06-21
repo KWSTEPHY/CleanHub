@@ -1,8 +1,12 @@
 import React from "react";
-import { MdOutlineAlternateEmail } from "react-icons/md";
-import { LuPhoneCall } from "react-icons/lu";
-import { RiHomeOfficeFill } from "react-icons/ri";
-import { IoMdMegaphone } from "react-icons/io";
+import { MdAccountCircle } from "react-icons/md";
+
+import { ImLocation2 } from "react-icons/im";
+
+import { GiVacuumCleaner } from "react-icons/gi";
+
+import { MdOutlineSentimentSatisfiedAlt } from "react-icons/md";
+
 
 const Home: React.FC = () => {
   const cardStyle =
@@ -57,11 +61,11 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="p-6 bg-white rounded-full shadow-md">
-                  <MdOutlineAlternateEmail className="h-20 w-20 text-[#002147]" />
+                  <MdAccountCircle className="h-20 w-20 text-[#002147]" />
                 </div>
 
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-                  Email Address
+                  Create Account
                 </h2>
                 <p className="text-lg mt-4 text-center">
                   info@webmail.com support@webmail.com jobs.@webmail.com
@@ -74,11 +78,11 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="p-6 bg-white rounded-full shadow-md">
-                  <LuPhoneCall className="h-20 w-20 text-[#002147]" />
+                  <ImLocation2 className="h-20 w-20 text-[#002147]" />
                 </div>
 
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
-                  Phone Number
+                  Track Location
                 </h2>
                 <p className="text-lg mt-4 text-center ">
                   (+254)803456675 (+254)712345874 (+254)123456992
@@ -91,12 +95,12 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="p-6 bg-white rounded-full shadow-md">
-                    <p>replace</p>
-                  <RiHomeOfficeFill className="h-20 w-20 text-[#002147]" />
+                    
+                  <GiVacuumCleaner className="h-20 w-20 text-[#002147]" />
                 </div>
 
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-                  Office Address
+                  Cleaning Services
                 </h2>
                 <p className="text-lg mt-4 text-center">
                   info@webmail.com support@webmail.com jobs.@webmail.com
@@ -109,11 +113,11 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="p-6 bg-white rounded-full shadow-md">
-                  <IoMdMegaphone className="h-20 w-20 text-[#002147]" />
+                  <MdOutlineSentimentSatisfiedAlt className="h-20 w-20 text-[#002147]" />
                 </div>
 
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
-                  Social Connect
+                  Experience
                 </h2>
                 <p className="text-lg mt-4 text-center">
                   www.facebook.com www.twitter.com www.instagram.com

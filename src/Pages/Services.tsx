@@ -1,5 +1,5 @@
 import React from "react";
-import "/home/victor/Documents/ALTProjects/CleanHub/src/App.css";
+
 
 const Services: React.FC = () => {
   const cardStyle =
