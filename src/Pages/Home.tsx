@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { MdAccountCircle } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
@@ -7,11 +7,6 @@ import {
   MdOutlineLocalLaundryService,
 } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const cardData = [
   {
@@ -58,26 +53,11 @@ const cardData = [
 ];
 
 const Home: React.FC = () => {
- const cardStyle =
-  "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
+  const cardStyle =
+    "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
 
   const cardStyleTwo =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
-  const sliderSettings = {
-    // dots: true,
-    infinite: true,
-    speed: 800,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  };
-
   return (
     <div className="w-screen">
       <section
@@ -102,12 +82,14 @@ const Home: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-          }}>
+          }}
+        >
           <h2
             className="text-8xl font-bold mx-auto px-6 py-8"
             style={{
               fontStyle: "italic",
-            }}>
+            }}
+          >
             Nyumbani
           </h2>
         </div>
@@ -117,30 +99,39 @@ const Home: React.FC = () => {
         <div className="w-full px-6">
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
-            <div className={cardStyle}>
-      <div className="relative flex items-center justify-center">
-      <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
-          <h1 className="text-xs font-bold text-[#002147]">01</h1>
-        </div>
-        <div className="p-6 bg-white rounded-full shadow-md">
-          <MdAccountCircle className="h-36 w-36 text-[#002147]" />
-        </div>
-      </div>
-
-      <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-        Create Account
-      </h2>
-      <p className="text-lg mt-4 text-center">
-        info@webmail.com support@webmail.com jobs.@webmail.com
-      </p>
-    </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>02</h1>
+            <div className={`${cardStyle} group`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">01</h1>
+                  </div>
+                  <div className="p-6 bg-white rounded-full shadow-md">
+                    <img
+                      src="src/assets/logo.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-36 w-36 transition-transform duration-300 group-hover:scale-10"
+                    />
+                  </div>
                 </div>
 
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <ImLocation2 className="h-20 w-20 text-[#002147]" />
+                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+                  Create Account
+                </h2>
+                <p className="text-lg mt-4 text-center">
+                  info@webmail.com support@webmail.com jobs.@webmail.com
+                </p>
+              </div>
+              <div className={`${cardStyle} group`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">02</h1>
+                  </div>
+                  <div className="p-6 bg-white rounded-full shadow-md overflow-hidden group">
+                    <img
+                      src="src/assets/location3.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
                   Track Location
