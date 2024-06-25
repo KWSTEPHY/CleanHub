@@ -142,13 +142,18 @@ const Home: React.FC = () => {
         <div className="w-full px-6">
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>01</h1>
-                </div>
-
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <MdAccountCircle className="h-20 w-20 text-[#002147]" />
+              <div className={`${cardStyle} group`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">01</h1>
+                  </div>
+                  <div className="p-6 bg-white rounded-full shadow-md">
+                    <img
+                      src="src/assets/logo.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-36 w-36 transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
 
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
@@ -158,15 +163,19 @@ const Home: React.FC = () => {
                   info@webmail.com support@webmail.com jobs.@webmail.com
                 </p>
               </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>02</h1>
+              <div className={`${cardStyle} group`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">02</h1>
+                  </div>
+                  <div className="p-6 bg-white rounded-full shadow-md overflow-hidden group">
+                    <img
+                      src="src/assets/location3.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
-
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <ImLocation2 className="h-20 w-20 text-[#002147]" />
-                </div>
-
                 <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
                   Track Location
                 </h2>
@@ -174,13 +183,18 @@ const Home: React.FC = () => {
                   (+254)803456675 (+254)712345874 (+254)123456992
                 </p>
               </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>03</h1>
-                </div>
-
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <GiVacuumCleaner className="h-20 w-20 text-[#002147]" />
+              <div className={`${cardStyle} group`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">03</h1>
+                  </div>
+                  <div className="p-6 bg-white rounded-full shadow-md">
+                    <img
+                      src="src/assets/cleaning services.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
                 </div>
 
                 <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
@@ -190,22 +204,28 @@ const Home: React.FC = () => {
                   info@webmail.com support@webmail.com jobs.@webmail.com
                 </p>
               </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>04</h1>
-                </div>
+              <div className={`${cardStyle} group`}>
+  <div className="relative flex items-center justify-center">
+    <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+      <h1 className="text-xs font-bold text-[#002147]">04</h1>
+    </div>
+    <div className="p-6 bg-white rounded-full shadow-md">
+      <img 
+        src="src/assets/experience.jpeg" 
+        alt="Washing Machine Holding Clean T-Shirt"
+        className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+      />
+    </div>
+  </div>
 
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <MdOutlineSentimentSatisfiedAlt className="h-20 w-20 text-[#002147]" />
-                </div>
+  <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
+    Experience
+  </h2>
+  <p className="text-lg mt-4 text-center">
+    www.facebook.com www.twitter.com www.instagram.com
+  </p>
+</div>
 
-                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
-                  Experience
-                </h2>
-                <p className="text-lg mt-4 text-center">
-                  www.facebook.com www.twitter.com www.instagram.com
-                </p>
-              </div>
             </div>
           </div>
         </div>
