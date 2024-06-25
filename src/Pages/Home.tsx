@@ -58,8 +58,9 @@ const cardData = [
 ];
 
 const Home: React.FC = () => {
-  const cardStyle =
-    "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
+ const cardStyle =
+  "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
+
   const cardStyleTwo =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
 
@@ -142,22 +143,23 @@ const Home: React.FC = () => {
         <div className="w-full px-6">
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <h1>01</h1>
-                </div>
+            <div className={cardStyle}>
+      <div className="relative flex items-center justify-center">
+      <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+          <h1 className="text-xs font-bold text-[#002147]">01</h1>
+        </div>
+        <div className="p-6 bg-white rounded-full shadow-md">
+          <MdAccountCircle className="h-36 w-36 text-[#002147]" />
+        </div>
+      </div>
 
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <MdAccountCircle className="h-20 w-20 text-[#002147]" />
-                </div>
-
-                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-                  Create Account
-                </h2>
-                <p className="text-lg mt-4 text-center">
-                  info@webmail.com support@webmail.com jobs.@webmail.com
-                </p>
-              </div>
+      <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+        Create Account
+      </h2>
+      <p className="text-lg mt-4 text-center">
+        info@webmail.com support@webmail.com jobs.@webmail.com
+      </p>
+    </div>
               <div className={cardStyle}>
                 <div className="p-6 bg-white rounded-full shadow-md">
                   <h1>02</h1>
