@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdAccountCircle } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
@@ -7,6 +7,11 @@ import {
   MdOutlineLocalLaundryService,
 } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cardData = [
   {
@@ -57,6 +62,21 @@ const Home: React.FC = () => {
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
   const cardStyleTwo =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
     <div className="w-screen">
       <section
@@ -81,13 +101,40 @@ const Home: React.FC = () => {
             alignItems: "center",
             justifyContent: "center",
           }}>
-          <h2
-            className="text-8xl font-bold mx-auto px-6 py-8"
-            style={{
-              fontStyle: "italic",
-            }}>
-            Nyumbani
-          </h2>
+         
+          <div className="absolute top-0 w-full h-full flex items-center justify-center">
+            <div className="w-4/5">
+              <Slider {...sliderSettings}>
+                <div>
+                  <h2
+                    className="text-6xl font-bold mx-auto px-6 py-8"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Welcome to Korda Larvae
+                  </h2>
+                </div>
+                <div>
+                  <h2
+                    className="text-6xl font-bold mx-auto px-6 py-8"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Your Home for quality Cleaning Services
+                  </h2>
+                </div>
+                <div>
+                  <h2
+                    className="text-6xl font-bold mx-auto px-6 py-8"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Experience the Best we have to offer
+                  </h2>
+                </div>
+              </Slider>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -263,7 +310,6 @@ const Home: React.FC = () => {
         </div>
 
         <div className="p-16 pt-24 flex space-x-8 text-[#002147]">
-      
           <div className="content flex-grow pt-16 text-left">
             <h2 className="text-l font-bold mb-4 text-left text-[#53CCDC]">
               Why Choose Us
@@ -343,10 +389,6 @@ const Home: React.FC = () => {
                 Book, manage & pay
               </li>
             </ul>
-
-     
-
-
           </div>
           <div className="img flex-shrink-0 w-2/5 pt-8 ">
             <img
@@ -354,13 +396,12 @@ const Home: React.FC = () => {
               alt="Demo pic"
               className="rounded-lg shadow-2xl w-48 h-48 object-cover relative top-3"
             />
-             <img
+            <img
               src="/src/assets/pic 3.jpeg"
               alt="Demo pic"
               className="rounded-xl shadow-2xl w-48 h-48 object-cover relative left-32 z-10"
             />
           </div>
-
         </div>
       </section>
 
