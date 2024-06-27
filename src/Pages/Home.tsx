@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-import { MdAccountCircle } from "react-icons/md";
-import { ImLocation2 } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
 import {
-  MdOutlineSentimentSatisfiedAlt,
   MdOutlineLocalLaundryService,
 } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
