@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdAccountCircle } from "react-icons/md";
 import { ImLocation2 } from "react-icons/im";
 import { GiVacuumCleaner } from "react-icons/gi";
@@ -7,6 +7,11 @@ import {
   MdOutlineLocalLaundryService,
 } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const cardData = [
   {
@@ -55,9 +60,23 @@ const cardData = [
 const Home: React.FC = () => {
   const cardStyle =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
-
   const cardStyleTwo =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+  const sliderSettings = {
+    // dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
+
   return (
     <div className="w-screen">
       <section
@@ -70,8 +89,7 @@ const Home: React.FC = () => {
           backgroundAttachment: "fixed",
           minHeight: "400px",
           width: "100%",
-        }}
-      >
+        }}>
         <div
           className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
           style={{
@@ -82,16 +100,41 @@ const Home: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-          }}
-        >
-          <h2
-            className="text-8xl font-bold mx-auto px-6 py-8"
-            style={{
-              fontStyle: "italic",
-            }}
-          >
-            Nyumbani
-          </h2>
+          }}>
+         
+          <div className="absolute top-0 w-full h-full flex items-center justify-center">
+            <div className="w-4/5">
+              <Slider {...sliderSettings}>
+                <div>
+                  <h2
+                    className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Welcome to Korda Larvae
+                  </h2>
+                </div>
+                <div>
+                  <h2
+                    className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Your Home for quality Cleaning Services
+                  </h2>
+                </div>
+                <div>
+                  <h2
+                    className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
+                    style={{
+                      fontStyle: "italic",
+                    }}>
+                    Experience the Best we have to offer
+                  </h2>
+                </div>
+              </Slider>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -99,7 +142,7 @@ const Home: React.FC = () => {
         <div className="w-full px-6">
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
-            <div className={`${cardStyle} group`}>
+              <div className={`${cardStyle} group`}>
                 <div className="relative flex items-center justify-center">
                   <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
                     <h1 className="text-xs font-bold text-[#002147]">01</h1>
@@ -108,7 +151,7 @@ const Home: React.FC = () => {
                     <img
                       src="src/assets/logo.jpeg"
                       alt="Washing Machine Holding Clean T-Shirt"
-                      className="h-36 w-36 transition-transform duration-300 group-hover:scale-10"
+                      className="h-36 w-36 transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -216,8 +259,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -233,8 +275,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -250,8 +291,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -267,8 +307,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -312,8 +351,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -329,8 +367,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -346,8 +383,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -363,8 +399,7 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -396,8 +431,7 @@ const Home: React.FC = () => {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="relative bg-white w-96 h-full rounded-b-lg  text-[#002147] shadow-lg group hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg"
-            >
+              className="relative bg-white w-96 h-full rounded-b-lg  text-[#002147] shadow-lg group hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg">
               <div className="absolute inset-x-0 -top-0 flex justify-center">
                 <div className="bg-blue-100 rounded-full w-32 h-32 mt-2 transition-all duration-300 ease-in-out group-hover:bg-white">
                   {card.icon}
@@ -417,8 +451,7 @@ const Home: React.FC = () => {
                 </ul>
                 <button
                   className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
-                  type="button"
-                >
+                  type="button">
                   Submit Request
                 </button>
               </div>
@@ -437,8 +470,7 @@ const Home: React.FC = () => {
           backgroundAttachment: "fixed",
           minHeight: "700px",
           width: "100%",
-        }}
-      >
+        }}>
         <div
           className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
           style={{
@@ -449,8 +481,7 @@ const Home: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-          }}
-        >
+          }}>
           <div className="ml-80 w-full px-6">
             <div className={cardStyleTwo}>
               <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
@@ -460,8 +491,7 @@ const Home: React.FC = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="name"
-                    className="block text-gray-700 font-bold mb-2"
-                  >
+                    className="block text-gray-700 font-bold mb-2">
                     Name
                   </label>
                   <input
@@ -474,8 +504,7 @@ const Home: React.FC = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="email"
-                    className="block text-gray-700 font-bold mb-2"
-                  >
+                    className="block text-gray-700 font-bold mb-2">
                     Email
                   </label>
                   <input
@@ -489,8 +518,7 @@ const Home: React.FC = () => {
                   <div className="mb-4 w-1/2">
                     <label
                       htmlFor="date"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
+                      className="block text-gray-700 font-bold mb-2">
                       Date
                     </label>
                     <input
@@ -502,24 +530,21 @@ const Home: React.FC = () => {
                   <div className="mb-4 w-1/2">
                     <label
                       htmlFor="message"
-                      className="block text-gray-700 font-bold mb-2"
-                    >
+                      className="block text-gray-700 font-bold mb-2">
                       Message
                     </label>
                     <input
                       type="message"
                       id="message"
                       className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
-                      placeholder="Enter your message"
-                    ></input>
+                      placeholder="Enter your message"></input>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
                   <button
                     className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
-                    type="button"
-                  >
+                    type="button">
                     Submit
                   </button>
                 </div>
