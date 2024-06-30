@@ -39,7 +39,7 @@ const AboutUs = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
+              className={`${cardStyle} hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
               style={{ position: "relative" }}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Mission
@@ -52,7 +52,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
+              className={`${cardStyle} hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
               style={{ position: "relative" }}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Vision
@@ -65,7 +65,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div
-              className={`${cardStyle} hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
+              className={`${cardStyle} hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg`}
               style={{ position: "relative" }}>
               <h2 className="text-4xl font-bold mb-4 text-[#002147]">
                 Our Values
@@ -185,7 +185,7 @@ const AboutUs = () => {
               eiusmod tempor incididunt ut labore et dolore
             </p>
 
-            <div className="border-t-4 border-yellow-500 my-4"></div>
+            <div className="border-t-4 border-black my-4"></div>
 
             <p className="mt-8 font-semibold">Rosalina D. William Founder</p>
           </div>
