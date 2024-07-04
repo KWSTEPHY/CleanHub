@@ -6,7 +6,7 @@ import { IoMdMegaphone } from "react-icons/io";
 
 const Contacts: React.FC = () => {
   const cardStyle =
-    "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center max-w-xs";
+    "rounded-lg p-4 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center ";
   const cardStyleTwo =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-3/5";
   return (
@@ -50,47 +50,49 @@ const Contacts: React.FC = () => {
         <div className="w-full px-6">
           <div className="flex justify-center m-4">
             <div className="grid grid-cols-4 gap-6">
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <MdOutlineAlternateEmail className="h-20 w-20 text-[#002147]" />
+            <div className={`${cardStyle} text-black w-64 h-64`}>
+  <div className="p-4 bg-white rounded-full shadow-md">
+    <MdOutlineAlternateEmail className="h-10 w-10" />
+  </div>
+  <h2 className="text-lg font-bold mb-2 mt-6">
+    Email Address
+  </h2>
+  <p className="text-base mt-2 text-center">
+    info@webmail.com support@webmail.com jobs.@webmail.com
+  </p>
+</div>
+
+
+              <div className={`${cardStyle}text-black w-64 h-64`}>
+                <div className="p-4 bg-white rounded-full shadow-md">
+                  <LuPhoneCall className="h-10 w-10" />
                 </div>
-                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-                  Email Address
-                </h2>
-                <p className="text-lg mt-4 text-center">
-                  info@webmail.com support@webmail.com jobs.@webmail.com
-                </p>
-              </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <LuPhoneCall className="h-20 w-20 text-[#002147]" />
-                </div>
-                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
+                <h2 className="text-lg font-bold mb-2 mt-6">
                   Phone Number
                 </h2>
-                <p className="text-lg mt-4 text-center ">
+                <p className="text-base mt-2 text-center">
                   (+254)803456675 (+254)712345874 (+254)123456992
                 </p>
               </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <RiHomeOfficeFill className="h-20 w-20 text-[#002147]" />
+              <div className={`${cardStyle}text-black w-64 h-64`}>
+                <div className="p-4 bg-white rounded-full shadow-md">
+                  <RiHomeOfficeFill className="h-10 w-10" />
                 </div>
-                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+                <h2 className="text-lg font-bold mb-2 mt-6">
                   Office Address
                 </h2>
-                <p className="text-lg mt-4 text-center">
+                <p className="text-base mt-2 text-center">
                   info@webmail.com support@webmail.com jobs.@webmail.com
                 </p>
               </div>
-              <div className={cardStyle}>
-                <div className="p-6 bg-white rounded-full shadow-md">
-                  <IoMdMegaphone className="h-20 w-20 text-[#002147]" />
+              <div className={`${cardStyle}text-black w-64 h-64`}>
+                <div className="p-4 bg-white rounded-full shadow-md">
+                  <IoMdMegaphone className="h-10 w-10" />
                 </div>
-                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
+                <h2 className="text-lg font-bold mb-2 mt-6">
                   Social Connect
                 </h2>
-                <p className="text-lg mt-4 text-center">
+                <p className="text-base mt-2 text-center">
                   www.facebook.com www.twitter.com www.instagram.com
                 </p>
               </div>
@@ -124,7 +126,7 @@ const Contacts: React.FC = () => {
         >
           <div className="ml-80 w-full px-6">
             <div className={cardStyleTwo}>
-              <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
+              <h2 className="text-4xl font-bold text-center text-black mb-4 mt-10">
                 Get an emergency call or appointment
               </h2>
               <form className="w-full max-w-md">
@@ -138,7 +140,7 @@ const Contacts: React.FC = () => {
                   <input
                     type="text"
                     id="name"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-black text-white leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -152,7 +154,7 @@ const Contacts: React.FC = () => {
                   <input
                     type="email"
                     id="email"
-                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
+                    className="shadow appearance-none border rounded w-full py-2 px-3 bg-black text-white leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -167,7 +169,7 @@ const Contacts: React.FC = () => {
                     <input
                       type="date"
                       id="date"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-black text-white leading-tight focus:outline-none focus:shadow-outline"
                     />
                   </div>
                   <div className="mb-4 w-1/2">
@@ -180,7 +182,7 @@ const Contacts: React.FC = () => {
                     <input
                       type="message"
                       id="message"
-                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 bg-black text-white leading-tight focus:outline-none focus:shadow-outline"
                       placeholder="Enter your message"
                     ></input>
                   </div>
@@ -188,7 +190,7 @@ const Contacts: React.FC = () => {
 
                 <div className="flex items-center justify-center">
                   <button
-                    className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
+                    className="bg-black hover:bg-blue-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
                     type="button">
                     Submit
                   </button>

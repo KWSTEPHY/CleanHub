@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white text-[#002147] font-bold fixed w-screen top-0 z-10">
+    <nav className="bg-white text-black font-bold fixed w-screen top-0 z-10">
       <div className="w-full flex justify-between items-center py-4 px-6">
         <div className="text-2xl font-bold">Koda Lavare</div>
         <div className="hidden md:flex space-x-8">
           <div className="relative">
             <Link
-              className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
+              className="text-black font-bold text-xl hover:text-[#53CCDC]"
               to=""
             >
               Home
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="relative">
             <Link
-              className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
+              className="text-black font-bold text-xl hover:text-[#53CCDC]"
               to="/about-us"
             >
               About Us
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="relative">
             <Link
-              className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
+              className="text-black font-bold text-xl hover:text-[#53CCDC]"
               to="/services"
             >
               Services
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
           </div>
           <div className="relative">
             <Link
-              className="text-[#002147] font-bold text-xl hover:text-[#53CCDC]"
+              className="text-black font-bold text-xl hover:text-[#53CCDC]"
               to="/contacts"
             >
               Contacts

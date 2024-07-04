@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { GiVacuumCleaner } from "react-icons/gi";
-import {
-  MdOutlineLocalLaundryService,
-} from "react-icons/md";
+import { MdOutlineLocalLaundryService } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -86,7 +84,8 @@ const Home: React.FC = () => {
           backgroundAttachment: "fixed",
           minHeight: "400px",
           width: "100%",
-        }}>
+        }}
+      >
         <div
           className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
           style={{
@@ -97,26 +96,28 @@ const Home: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-          }}>
-         
+          }}
+        >
           <div className="absolute top-0 w-full h-full flex items-center justify-center">
             <div className="w-4/5">
               <Slider {...sliderSettings}>
                 <div>
-                  <h2
-                    className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
-                    style={{
-                      fontStyle: "italic",
-                    }}>
-                    Welcome to Korda Larvae
-                  </h2>
+                <h2
+  className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
+  style={{ fontStyle: "italic", maxWidth: "600px", whiteSpace: "normal" }}
+>
+  Welcome to<br/>Korda Lavare
+</h2>
+
+
                 </div>
                 <div>
                   <h2
                     className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
                     style={{
                       fontStyle: "italic",
-                    }}>
+                    }}
+                  >
                     Your Home for quality Cleaning Services
                   </h2>
                 </div>
@@ -125,7 +126,8 @@ const Home: React.FC = () => {
                     className="text-7xl font-bold mx-auto px-6 py-8 mt-8 text-center"
                     style={{
                       fontStyle: "italic",
-                    }}>
+                    }}
+                  >
                     Experience the Best we have to offer
                   </h2>
                 </div>
@@ -136,93 +138,89 @@ const Home: React.FC = () => {
       </section>
 
       <section className="bg-blue-100 w-screen text-black py-20">
+      <div className="relative flex items-center justify-center p-8 ">
+      <h1> HOW IT WORKS </h1>
+      </div>
         <div className="w-full px-6">
+       
           <div className="flex justify-center m-4">
+         
             <div className="grid grid-cols-4 gap-6">
-              <div className={`${cardStyle} group`}>
+              
+              
+              <div className={`${cardStyle} group w-64 h-72 p-4`}>
                 <div className="relative flex items-center justify-center">
-                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                  <div className="absolute -left-2 top-2.5 p-3 bg-white rounded-full shadow-md">
                     <h1 className="text-xs font-bold text-[#002147]">01</h1>
                   </div>
-                  <div className="p-6 bg-white rounded-full shadow-md">
+                  <div className="p-4 bg-white rounded-full shadow-md">
                     <img
                       src="src/assets/logo.jpeg"
                       alt="Washing Machine Holding Clean T-Shirt"
-                      className="h-36 w-36 transition-transform duration-300 group-hover:scale-110"
+                      className="h-24 w-24 transition-transform duration-300 rounded-full group-hover:scale-110"
                     />
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
+                <h2 className="text-xl font-bold text-[#002147] mb-2 mt-10 text-center">
                   Create Account
                 </h2>
-                <p className="text-lg mt-4 text-center">
-                  info@webmail.com support@webmail.com jobs.@webmail.com
-                </p>
               </div>
-              <div className={`${cardStyle} group`}>
+
+              <div className={`${cardStyle} group w-64 h-72 p-4`}>
                 <div className="relative flex items-center justify-center">
-                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                  <div className="absolute -left-2 top-2.5 p-3 bg-white rounded-full shadow-md">
                     <h1 className="text-xs font-bold text-[#002147]">02</h1>
                   </div>
-                  <div className="p-6 bg-white rounded-full shadow-md overflow-hidden group">
+                  <div className="p-4 bg-white rounded-full shadow-md">
                     <img
                       src="src/assets/location3.jpeg"
                       alt="Washing Machine Holding Clean T-Shirt"
-                      className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                      className="h-24 w-24 transition-transform duration-300 rounded-full group-hover:scale-110"
                     />
                   </div>
                 </div>
-                <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
-                  Track Location
+
+                <h2 className="text-xl font-bold text-[#002147] mb-2 mt-10 text-center">
+                  Track Your Location
                 </h2>
-                <p className="text-lg mt-4 text-center ">
-                  (+254)803456675 (+254)712345874 (+254)123456992
-                </p>
               </div>
-              <div className={`${cardStyle} group`}>
+              <div className={`${cardStyle} group w-64 h-72 p-4`}>
                 <div className="relative flex items-center justify-center">
-                  <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
+                  <div className="absolute -left-2 top-2.5 p-3 bg-white rounded-full shadow-md">
                     <h1 className="text-xs font-bold text-[#002147]">03</h1>
                   </div>
-                  <div className="p-6 bg-white rounded-full shadow-md">
+                  <div className="p-4 bg-white rounded-full shadow-md">
                     <img
                       src="src/assets/cleaning services.jpeg"
                       alt="Washing Machine Holding Clean T-Shirt"
-                      className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
+                      className="h-24 w-24 transition-transform duration-300 rounded-full group-hover:scale-110"
                     />
                   </div>
                 </div>
 
-                <h2 className="text-2xl font-bold text-[#002147] mb-4 mt-10">
-                  Cleaning Services
+                <h2 className="text-xl font-bold text-[#002147] mb-2 mt-10 text-center">
+                 Select Service
                 </h2>
-                <p className="text-lg mt-4 text-center">
-                  info@webmail.com support@webmail.com jobs.@webmail.com
-                </p>
               </div>
-              <div className={`${cardStyle} group`}>
-  <div className="relative flex items-center justify-center">
-    <div className="absolute -left-4 top-5 p-5 bg-white rounded-full shadow-md">
-      <h1 className="text-xs font-bold text-[#002147]">04</h1>
-    </div>
-    <div className="p-6 bg-white rounded-full shadow-md">
-      <img 
-        src="src/assets/experience.jpeg" 
-        alt="Washing Machine Holding Clean T-Shirt"
-        className="h-36 w-36 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
-      />
-    </div>
-  </div>
+              <div className={`${cardStyle} group w-64 h-72 p-4`}>
+                <div className="relative flex items-center justify-center">
+                  <div className="absolute -left-2 top-2.5 p-3 bg-white rounded-full shadow-md">
+                    <h1 className="text-xs font-bold text-[#002147]">04</h1>
+                  </div>
+                  <div className="p-4 bg-white rounded-full shadow-md">
+                    <img
+                      src="src/assets/experience.jpeg"
+                      alt="Washing Machine Holding Clean T-Shirt"
+                      className="h-24 w-24 transition-transform duration-300 rounded-full group-hover:scale-110"
+                    />
+                  </div>
+                </div>
 
-  <h2 className="text-2xl text-center font-bold text-[#002147] mb-4 mt-10">
-    Experience
-  </h2>
-  <p className="text-lg mt-4 text-center">
-    www.facebook.com www.twitter.com www.instagram.com
-  </p>
-</div>
-
+                <h2 className="text-xl font-bold text-[#002147] mb-2 mt-10 text-center">
+                  Share Your Experience
+                </h2>
+              </div>
             </div>
           </div>
         </div>
@@ -256,7 +254,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -272,7 +271,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -288,7 +288,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -304,7 +305,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -348,7 +350,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -364,7 +367,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -380,7 +384,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -396,7 +401,8 @@ const Home: React.FC = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -428,7 +434,8 @@ const Home: React.FC = () => {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="relative bg-white w-96 h-full rounded-b-lg  text-[#002147] shadow-lg group hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg">
+              className="relative bg-white w-96 h-full rounded-b-lg  text-[#002147] shadow-lg group hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg"
+            >
               <div className="absolute inset-x-0 -top-0 flex justify-center">
                 <div className="bg-blue-100 rounded-full w-32 h-32 mt-2 transition-all duration-300 ease-in-out group-hover:bg-white">
                   {card.icon}
@@ -448,7 +455,8 @@ const Home: React.FC = () => {
                 </ul>
                 <button
                   className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
-                  type="button">
+                  type="button"
+                >
                   Submit Request
                 </button>
               </div>
@@ -467,7 +475,8 @@ const Home: React.FC = () => {
           backgroundAttachment: "fixed",
           minHeight: "700px",
           width: "100%",
-        }}>
+        }}
+      >
         <div
           className="flex bg-black bg-opacity-50 text-white backdrop-filter backdrop-blur-sm mx-auto px-0"
           style={{
@@ -478,7 +487,8 @@ const Home: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-          }}>
+          }}
+        >
           <div className="ml-80 w-full px-6">
             <div className={cardStyleTwo}>
               <h2 className="text-4xl font-bold text-center text-[#002147] mb-4 mt-10">
@@ -488,7 +498,8 @@ const Home: React.FC = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="name"
-                    className="block text-gray-700 font-bold mb-2">
+                    className="block text-gray-700 font-bold mb-2"
+                  >
                     Name
                   </label>
                   <input
@@ -501,7 +512,8 @@ const Home: React.FC = () => {
                 <div className="mb-4">
                   <label
                     htmlFor="email"
-                    className="block text-gray-700 font-bold mb-2">
+                    className="block text-gray-700 font-bold mb-2"
+                  >
                     Email
                   </label>
                   <input
@@ -515,7 +527,8 @@ const Home: React.FC = () => {
                   <div className="mb-4 w-1/2">
                     <label
                       htmlFor="date"
-                      className="block text-gray-700 font-bold mb-2">
+                      className="block text-gray-700 font-bold mb-2"
+                    >
                       Date
                     </label>
                     <input
@@ -527,21 +540,24 @@ const Home: React.FC = () => {
                   <div className="mb-4 w-1/2">
                     <label
                       htmlFor="message"
-                      className="block text-gray-700 font-bold mb-2">
+                      className="block text-gray-700 font-bold mb-2"
+                    >
                       Message
                     </label>
                     <input
                       type="message"
                       id="message"
                       className="shadow appearance-none border rounded w-full py-2 px-3 bg-[#002147] text-white leading-tight focus:outline-none focus:shadow-outline"
-                      placeholder="Enter your message"></input>
+                      placeholder="Enter your message"
+                    ></input>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
                   <button
                     className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
-                    type="button">
+                    type="button"
+                  >
                     Submit
                   </button>
                 </div>
