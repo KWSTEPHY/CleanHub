@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Services: React.FC = () => {
   const cardStyle =
     "rounded  shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center w-96 m-6";
@@ -83,7 +82,7 @@ const Services: React.FC = () => {
                     right: "5",
                   }}>
                   <h3 className="font-bold text-2xl text-[#002147]">
-                    Commercial Cleaning
+                    Office Cleaning
                   </h3>
                   <div className="price-range text-l font-semibold text-[#53CCDC]">
                     Price Range: $50 - $100
@@ -106,76 +105,7 @@ const Services: React.FC = () => {
                     right: "5",
                   }}>
                   <h3 className="font-bold text-2xl text-[#002147]">
-                    Deep Cleaning
-                  </h3>
-                  <div className="price-range text-l font-semibold text-[#53CCDC]">
-                    Price Range: $50 - $100
-                  </div>
-                </div>
-              </div>
-
-              <div className={cardStyle} style={{ position: "relative" }}>
-                <img
-                  src="/src/assets/pic 3.jpeg"
-                  alt="Carpet Cleaning"
-                  className="service-image rounded hover:zoom"
-                />
-                <div
-                  className="service-details bg-white z-10 w-4/5 rounded ml-8"
-                  style={{
-                    position: "absolute",
-                    bottom: "0",
-                    left: "0",
-                    right: "5",
-                  }}>
-                  <h3 className="font-bold text-2xl text-[#002147]">
-                    Carpet Cleaning
-                  </h3>
-                  <div className="price-range text-l font-semibold text-[#53CCDC]">
-                    Price Range: $50 - $100
-                  </div>
-                </div>
-              </div>
-
-              <div className={cardStyle} style={{ position: "relative" }}>
-                <img
-                  src="/src/assets/12.jpeg"
-                  alt="Office Cleaning"
-                  className="service-image rounded hover:zoom"
-                />
-                <div
-                  className="service-details bg-white z-10 w-4/5 rounded ml-8"
-                  style={{
-                    position: "absolute",
-                    bottom: "0",
-                    left: "0",
-                    right: "5",
-                  }}>
-                  <h3 className="font-bold text-2xl text-[#002147]">
-                    Office Cleaning
-                  </h3>
-                  <div className="price-range text-l font-semibold text-[#53CCDC]">
-                    Price Range: $50 - $100
-                  </div>
-                </div>
-              </div>
-
-              <div className={cardStyle} style={{ position: "relative" }}>
-                <img
-                  src="/src/assets/pic 3.jpeg"
-                  alt="Car Cleaning"
-                  className="service-image rounded hover:zoom"
-                />
-                <div
-                  className="service-details bg-white z-10 w-4/5 rounded ml-8"
-                  style={{
-                    position: "absolute",
-                    bottom: "0",
-                    left: "0",
-                    right: "5",
-                  }}>
-                  <h3 className="font-bold text-2xl text-[#002147]">
-                    Car Cleaning
+                    Commercial Cleaning
                   </h3>
                   <div className="price-range text-l font-semibold text-[#53CCDC]">
                     Price Range: $50 - $100
