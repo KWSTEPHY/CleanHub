@@ -1,56 +1,11 @@
 import React, { useEffect } from "react";
-import { GiVacuumCleaner } from "react-icons/gi";
-import { MdOutlineLocalLaundryService } from "react-icons/md";
-import { SiCcleaner } from "react-icons/si";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OfferCard from "../components/OfferCard";
 
-const cardData = [
-  {
-    icon: <GiVacuumCleaner className="text-[#002147] ml-8 mt-4 w-20 h-20" />,
-    title: "Property ",
-    price: "$199",
-    description: "One Time Installation",
-    features: [
-      "2 Bedrooms cleaning",
-      "Vacuuming",
-      "2 Bathroom cleaning",
-      "Window cleaning",
-      "Floor cleaning",
-    ],
-  },
-  {
-    icon: (
-      <MdOutlineLocalLaundryService className="text-[#002147] ml-6 mt-6 w-20 h-20" />
-    ),
-    title: "Property ",
-    price: "$299",
-    description: "One Time Installation",
-    features: [
-      "3 Bedrooms cleaning",
-      "Vacuuming",
-      "3 Bathroom cleaning",
-      "Window cleaning",
-      "Floor cleaning",
-    ],
-  },
-  {
-    icon: <SiCcleaner className="text-[#002147] ml-4 mt-6 w-20 h-20" />,
-    title: "Property ",
-    price: "$399",
-    description: "One Time Installation",
-    features: [
-      "4 Bedrooms cleaning",
-      "Vacuuming",
-      "4 Bathroom cleaning",
-      "Window cleaning",
-      "Floor cleaning",
-    ],
-  },
-];
 
 const Home: React.FC = () => {
   const cardStyle =
@@ -429,40 +384,7 @@ const Home: React.FC = () => {
       </section>
 
       <section>
-        <div></div>
-        <div className="bg-[#002147] p-8 flex justify-around items-start">
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className="relative bg-white w-96 h-full rounded-b-lg  text-[#002147] shadow-lg group hover:bg-blue-100 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg"
-            >
-              <div className="absolute inset-x-0 -top-0 flex justify-center">
-                <div className="bg-blue-100 rounded-full w-32 h-32 mt-2 transition-all duration-300 ease-in-out group-hover:bg-white">
-                  {card.icon}
-                </div>
-              </div>
-              <div className="bg-[#002147] h-16 m-0 w-full border border-transparent"></div>
-              <div className="pt-24 p-12 text-center">
-                <h2 className="text-2xl font-bold mb-4 text-[#53CCDC]">
-                  {card.title}
-                </h2>
-                <p className="text-6xl font-semibold">{card.price}</p>
-                <p className="text-gray-700 mb-4 mt-4">{card.description}</p>
-                <ul className="list-disc list-inside mb-4 text-left ml-16">
-                  {card.features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
-                </ul>
-                <button
-                  className="bg-[#002147] hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-48"
-                  type="button"
-                >
-                  Submit Request
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+        <OfferCard />
       </section>
 
       <section

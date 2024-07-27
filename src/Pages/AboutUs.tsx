@@ -1,3 +1,5 @@
+import AboutUsCard from "../components/AboutUsCard";
+
 const AboutUs = () => {
   const cardStyle =
     "rounded-lg p-6 bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300";
@@ -35,6 +37,11 @@ const AboutUs = () => {
         </div>
       </section>
 
+      <section>
+        <AboutUsCard  />
+      </section>
+
+{/* 
       <section className="bg-blue-100 w-screen text-black py-20 text-center justify-center">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -190,7 +197,7 @@ const AboutUs = () => {
             <p className="mt-8 font-semibold">Rosalina D. William Founder</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
